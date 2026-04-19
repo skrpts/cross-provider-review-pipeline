@@ -1,0 +1,42 @@
+# --- Identity ---
+id: "822b4944-982e-4562-8cda-b4557a209be1"
+name: "cross-provider-review-pipeline"
+display_name: "Cross-Provider Technical Review"
+description: "Draft with one AI model, critique with another, revise until the reviewer passes — better output through model diversity"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/cross-provider-review-pipeline"
+
+# --- Discovery (Hub) ---
+category: "content-creator"
+tags:
+  - "cross-provider"
+  - "technical-writing"
+  - "adversarial-review"
+  - "loops"
+  - "writing"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "llm-service"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 4
+  prompts: 4
+  workflows: 1
+  services: 1
+  sources: 0
+  documents: 0
+  assets: 0
+  total: 10
