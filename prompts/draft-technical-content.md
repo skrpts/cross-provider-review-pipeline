@@ -48,26 +48,28 @@ If a voice profile is provided above, write in the creator's voice — match the
 
 If an audience profile is provided, calibrate depth and jargon for this audience.
 
-## Iteration Check
+## Previous Draft
 
-Check for review feedback below. If there is feedback from a previous review, this is a revision — address every point. If there is no feedback, this is the first draft.
+{{loop.lastOutput}}
 
-### Previous Review Feedback (if any)
+## Reviewer Feedback
 
-{{steps.previous.output}}
+{{loop.lastReview}}
+
+If a previous draft and reviewer feedback are provided above, **revise the draft to address every point in the reviewer's feedback.** Preserve the parts that already work. Do not start from scratch — improve what exists.
+
+If no previous draft is provided (first iteration), write a complete blog post from the brief below.
 
 ---
 
-## First Draft Instructions
-
-If this is the FIRST draft (no review feedback above):
+## Brief
 
 **Topic:** {{input.topic}}
 **Audience:** {{input.target_audience}}
 **Key points:** {{input.key_points}}
 **Target length:** {{input.word_count}} words (default 1,500 if not specified)
 
-Write a complete technical blog post:
+## Structure
 
 1. **Hook** — an opening that immediately demonstrates you understand the reader's problem. No "In this article..." or "Have you ever..."
 2. **Setup** — why this problem matters, what most people get wrong
@@ -75,16 +77,6 @@ Write a complete technical blog post:
 4. **Evidence** — concrete examples, code snippets, real-world scenarios. Not hypotheticals.
 5. **Practical takeaway** — what the reader should do differently after reading this
 6. **Closing** — tie back to the opening, leave the reader with a clear next step
-
-## Revision Instructions
-
-If this is a REVISION (review feedback exists above):
-
-1. Read every piece of feedback carefully
-2. Address each point specifically — do not skip any
-3. Preserve sections that were not criticised
-4. Do not introduce new problems while fixing old ones
-5. If feedback conflicts with the original brief, prioritise the feedback
 
 ## Rules
 
