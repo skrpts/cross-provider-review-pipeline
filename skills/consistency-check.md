@@ -12,6 +12,11 @@ context_params:
     label: "Voice Profile"
     description: "Creator's writing style and terminology preferences for consistency checking"
     required: false
+  consistency_strictness:
+    label: "Consistency Strictness"
+    description: "How thoroughly to check for consistency — Overview, Standard, Thorough, or Exhaustive"
+    default: "Standard"
+    required: false
 ---
 
 ## Capability

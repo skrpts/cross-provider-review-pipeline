@@ -12,6 +12,11 @@ context_params:
     label: "Voice Profile"
     description: "Creator's writing style, vocabulary, sentence patterns, and banned words"
     required: false
+  grammar_strictness:
+    label: "Grammar Strictness"
+    description: "How strict to be with grammar rules — Casual, Conversational, Professional, or Academic"
+    default: "Professional"
+    required: false
 ---
 
 ## Capability

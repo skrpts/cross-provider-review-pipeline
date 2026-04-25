@@ -32,6 +32,14 @@ If no voice profile is provided, check internal consistency only.
 
 {{steps.previous.output}}
 
+### Consistency Strictness: {{step.context.consistency_strictness}}
+
+Adjust your review depth based on the strictness level:
+- **Overview**: Flag only obvious contradictions and major naming inconsistencies. Quick scan.
+- **Standard** (default): Check all 7 categories below. Flag clear issues, ignore borderline cases.
+- **Thorough**: Check all categories rigorously. Flag borderline cases as warnings. Note patterns.
+- **Exhaustive**: Maximum rigour. Flag every inconsistency no matter how minor. Include suggestions for a house style guide based on the document's most common patterns.
+
 ### Check For
 
 1. **Naming consistency** — is the same thing called different names in different places?
