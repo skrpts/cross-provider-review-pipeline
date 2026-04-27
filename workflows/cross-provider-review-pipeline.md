@@ -42,9 +42,11 @@ execution:
     step_type: "validation"
     prompt: "review-adversarially"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
   - parallel:
     - skill: "consistency-check"
+      prompt: "check-consistency"
       step_type: "review"
 ---
 
