@@ -38,16 +38,25 @@ execution:
   - skill: "technical-drafting"
     step_type: "generation"
     prompt: "draft-technical-content"
+    context:
+      voice_profile: ""
+      audience_profile: ""
   - skill: "adversarial-review"
     step_type: "validation"
     prompt: "review-adversarially"
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
   - parallel:
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
+      context:
+        voice_profile: ""
+        consistency_strictness: ""
 ---
 
 ## Overview
