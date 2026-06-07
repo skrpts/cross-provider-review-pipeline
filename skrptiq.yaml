@@ -1,9 +1,9 @@
 # --- Identity ---
-id: "822b4944-982e-4562-8cda-b4557a209be1"
+id: "14310d87-4850-457d-9493-5f5ce95fd56b"
 name: "cross-provider-review-pipeline"
 display_name: "Cross-Provider Technical Review"
 description: "Draft with one AI model, critique with another, revise until the reviewer passes — better output through model diversity"
-version: "1.0.14"
+version: "1.0.15"
 engine: ">=0.1.0"
 
 # --- Attribution ---
