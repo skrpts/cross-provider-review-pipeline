@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.0.16
+GH#745 — declare per-step `output: {name, type}` on every execution step (draft/text, adversarial_review/text, polished_content/text, consistency_verdict/decision). Lights up the #744 rich flow-map. Content-only; no bindings or logic changes.
+
 ## v1.0.15
 Fix-forward after Row 3b v1.0.14 publish failure. The v1.0.14 per-skrpt CI's "Register version with Hub API" step failed because the consumer's source `manifest.id` (822b4944…) did not match the D1 catalogue row's id (14310d87…) — a legacy drift from before Action 6 (`0bcc5ae0`) made publish-skrpt.mjs Step 2 INSERT use `manifest.id` for the D1 id column. v1.0.15 reconciles the source `manifest.id` to the catalogue authoritative value (Row-5-equivalent for consumers) and republishes. Per Adj-1: no re-tag of v1.0.14; the orphaned GitHub release artefact stays inert (no D1 versions row, no consumer pinned it).
 

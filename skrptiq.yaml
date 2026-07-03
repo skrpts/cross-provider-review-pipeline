@@ -3,7 +3,7 @@ id: "14310d87-4850-457d-9493-5f5ce95fd56b"
 name: "cross-provider-review-pipeline"
 display_name: "Cross-Provider Technical Review"
 description: "Draft with one AI model, critique with another, revise until the reviewer passes — better output through model diversity"
-version: "1.0.15"
+version: "1.0.16"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -62,3 +62,17 @@ contents:
   documents: 0
   assets: 0
   total: 5
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:00:41.103Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/cross-provider-review-pipeline/security"

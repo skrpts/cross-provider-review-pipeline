@@ -38,15 +38,18 @@ execution:
   - skill: "technical-drafting"
     step_type: "generation"
     prompt: "draft-technical-content"
+    output: { name: "draft", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       audience_profile: "General professional audience"
   - skill: "adversarial-review"
     step_type: "validation"
     prompt: "review-adversarially"
+    output: { name: "adversarial_review", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_content", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
@@ -54,6 +57,7 @@ execution:
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
+      output: { name: "consistency_verdict", type: "decision" }
       context:
         voice_profile: "Neutral professional tone"
         consistency_strictness: "Standard"
