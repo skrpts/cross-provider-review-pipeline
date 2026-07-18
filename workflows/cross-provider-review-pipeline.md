@@ -53,6 +53,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Technical Drafting"
+        field: output
   - parallel:
     - skill: "consistency-check"
       prompt: "check-consistency"

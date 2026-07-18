@@ -3,7 +3,7 @@ id: "14310d87-4850-457d-9493-5f5ce95fd56b"
 name: "cross-provider-review-pipeline"
 display_name: "Cross-Provider Technical Review"
 description: "Draft with one AI model, critique with another, revise until the reviewer passes — better output through model diversity"
-version: "1.0.16"
+version: "1.0.17"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -43,8 +43,8 @@ dependencies:
     checksum: "sha256:455c8bf590a9426d830bffd1a741afa058149bc29c58186c34d0d8699bea4bda"
   - id: "9b1771e0-39b0-4fbc-8d45-738f51b6083a"
     name: "polish-language"
-    version: 1.0.1
-    checksum: "sha256:2a666b1a1566e45a3d69cf3fac51399a471169184409ef54d588f69b7da7097e"
+    version: "1.0.6"
+    checksum: "sha256:c9ad71f960c5bd2bdafc8c41a283acce4fb34ee9b9dc5f761d7443b5f18ecc40"
 
 requires:
   services:
@@ -65,7 +65,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-03T15:54:13.890Z"
+  scanned_at: "2026-07-18T17:50:58.600Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
