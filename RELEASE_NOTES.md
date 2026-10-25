@@ -1,5 +1,20 @@
 # Release Notes
 
+## v1.0.18
+GH#1100 consumer wave (batch 4) — declare the data flow this workflow was resolving positionally.
+
+Each stage below now receives its input through a declared `bindings:` entry instead of `default_from_previous`, which K-073 revoked. **The value is unchanged**: each binding names the step that actually produces what the stage consumes. What changes is that the dependency is stated rather than inferred from position, so a reorder can no longer silently feed a stage the wrong artefact.
+
+Bindings added:
+  `check-consistency` ← `source: from_step "Language Polish"` (step 4)
+
+Dependency pins moved to the published versions that declare these slots:
+  `check-consistency` 1.0.1 → 1.0.6
+  `consistency-check` 1.0.1 → 1.0.3
+  `language-polish` 1.0.1 → 1.0.3
+  `llm-service` 1.0.1 → 1.0.3
+  `polish-language` 1.0.6 → 1.0.7
+
 ## v1.0.17
 GH#863 Wave 3 (Tier-3 tail) — the output_step (language-polish) was polishing its positional-previous step (a validation/review), not the deliverable, because polish-language was pinned pre-`source`-slot. Repinned polish-language 1.0.1→1.0.6 and bound language-polish `source` ← "Technical Drafting" (the real deliverable producer). No new steps; no other change.
 
